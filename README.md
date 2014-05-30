@@ -1,26 +1,25 @@
-### Android development environment for ubuntu precise (12.04 LTS)
+### Android development environment for ubuntu 14.04 LTS
 
-* Oracle Java JDK 6
+* Oracle Java JDK 7
 * Android SDK r22.3
-* Android NDK r9c
-* Apache Ant 1.8.4
+* Gradle 1.12
 
 It also updates the SDK to android 19 (4.4.2) with platform tools and system images for that revision.
 
 #### Install
 
-You can either pull from `ahazem/android`:
+You can either pull from `rharter/android`:
 
 ```
-docker pull ahazem/android
+docker pull rharter/android
 ```
 
 ```
-docker run -i -t ahazem/android /bin/bash
+docker run -i -t rharter/android /bin/bash
 ```
 
 or add it to your Dockerfile:
 
 ```
-FROM ahazem/android
+FROM rharter/android
 ```

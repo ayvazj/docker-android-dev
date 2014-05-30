@@ -1,7 +1,7 @@
 # Android development environment for Ubuntu 14.04 LTS.
 # version 0.0.1
 
-# Start with Ubuntu 14.04 (LTS).
+# Start with Ubuntu 14.04 LTS.
 FROM ubuntu:14.04
 
 MAINTAINER Ryan Harter <ryanjharter@gmail.com>
