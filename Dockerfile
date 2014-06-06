@@ -30,7 +30,7 @@ RUN mv android-sdk-linux /usr/local/android-sdk
 RUN rm android-sdk_r22.6.2-linux.tgz
 
 # Install Android tools
-RUN echo y | /usr/local/android-sdk/tools/android update sdk --filter platform,tool,platform-tool,extra --no-ui -a
+RUN echo y | /usr/local/android-sdk/tools/android update sdk --filter platform,tool,platform-tool,extra,addon --no-ui -a
 
 # Environment variables
 ENV ANDROID_HOME /usr/local/android-sdk
