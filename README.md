@@ -4,6 +4,26 @@
 * Android SDK r23
 * Gradle 1.10
 
+#### Create the container
+
+```
+docker build -t droidbld .
+```
+
+#### Run an interactive shell
+
+```
+docker run -i -t droidbld /bin/bash
+docker build -t droidbld .
+```
+
+#### Build a project from sources located under ~/Src/test
+
+```
+docker run -v ~/Src/test:/src -i -t droidbld /bin/bash -c "cd /src && ./gradlew assembleDebug"
+```
+
+
 #### Install
 
 You can either pull from `bprodoehl/android-dev`:

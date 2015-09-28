@@ -31,13 +31,14 @@ RUN mv android-sdk-linux /usr/local/android-sdk
 RUN rm android-sdk_r24.3.4-linux.tgz
 
 # Install Android tools
-RUN echo y | /usr/local/android-sdk/tools/android update sdk --filter platform,tool,platform-tool,extra,addon-google_apis-google-19,addon-google_apis_x86-google-19,build-tools-19.1.0 --no-ui -a
+RUN echo y | /usr/local/android-sdk/tools/android update sdk --no-ui --all --filter build-tools-23.0.1,platform-tools-23,android-23
+#RUN echo y | /usr/local/android-sdk/tools/android update sdk --filter platform,tool,platform-tool,extra,addon-google_apis-google-19,addon-google_apis_x86-google-19,build-tools-19.1.0 --no-ui -a
 
 # Install Android NDK
-RUN wget http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin
-RUN chmod a+x android-ndk-r10e-linux-x86_64.bin
-RUN ./android-ndk-r10e-linux-x86_64.bin
-RUN rm android-ndk-r10e-linux-x86_64.bin
+#RUN wget http://dl.google.com/android/ndk/android-ndk-r10e-linux-x86_64.bin
+#RUN chmod a+x android-ndk-r10e-linux-x86_64.bin
+#RUN ./android-ndk-r10e-linux-x86_64.bin
+#RUN rm android-ndk-r10e-linux-x86_64.bin
 
 # Install Gradle
 RUN wget https://services.gradle.org/distributions/gradle-2.7-bin.zip
@@ -57,3 +58,4 @@ ENV PATH $PATH:$GRADLE_HOME/bin
 
 # Export JAVA_HOME variable
 ENV JAVA_HOME /usr/lib/jvm/java-7-oracle
+
