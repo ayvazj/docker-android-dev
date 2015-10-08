@@ -25,19 +25,19 @@ docker run -v ~/Src/test:/src -i -t droidbld /bin/bash -c "cd /src && ./gradlew 
 
 #### Install
 
-You can either pull from `bprodoehl/android-dev`:
+You can either pull from `docker pull ayvazj/android-dev`:
 
 ```
-docker pull bprodoehl/android-dev
+docker pull docker pull ayvazj/android-dev
 ```
 
 ```
-docker run -i -t bprodoehl/android-dev /bin/bash
+docker run -i -t docker pull ayvazj/android-dev /bin/bash
 ```
 
 or add it to your Dockerfile:
 
 ```
-FROM bprodoehl/android-dev
+FROM docker pull ayvazj/android-dev
 ```
 
