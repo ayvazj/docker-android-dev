@@ -14,7 +14,6 @@ docker build -t droidbld .
 
 ```
 docker run -i -t droidbld /bin/bash
-docker build -t droidbld .
 ```
 
 #### Build a project from sources located under ~/Src/test
