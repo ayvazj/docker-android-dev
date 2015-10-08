@@ -19,6 +19,7 @@ docker run -i -t droidbld /bin/bash
 #### Build a project from sources located under ~/Src/test
 
 ```
+echo 'sdk.dir=/usr/local/android-sdk' >> local.properties
 docker run -v ~/Src/test:/src -i -t droidbld /bin/bash -c "cd /src && ./gradlew assembleDebug"
 ```
 
