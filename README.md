@@ -2,7 +2,7 @@
 
 * Oracle Java JDK 7
 * Android SDK r23
-* Gradle 1.10
+* Gradle 2.7
 
 #### Create the container
 
